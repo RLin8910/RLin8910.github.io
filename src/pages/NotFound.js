@@ -6,7 +6,7 @@ class NotFound extends Component {
     }
 
     componentDidMount(){
-        document.title = "Page not Found";
+        document.title = "Page not Found | Raymond Lin";
     }
 
     render() {
