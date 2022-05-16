@@ -11,7 +11,6 @@ import React, { Component } from "react";
     render() {
       return (
         <div>
-          <div className="navbar-fake"/>
           <img src="/images/global/banner.jpg" width={"100%"}/>
         </div>
       );
