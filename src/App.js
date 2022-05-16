@@ -10,9 +10,11 @@ import NotFound from './pages/NotFound';
 import TheStreetKing from './pages/the-street-king/TheStreetKing';
 import PrivacyPolicy from './pages/the-street-king/PrivacyPolicy';
 import FeatureRequests from './pages/the-street-king/FeatureRequests';
+// Left Turn Legend
+import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Link
@@ -29,6 +31,7 @@ function App() {
           <Route path = "/the-street-king" element={<TheStreetKing/>}/>
           <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
+          <Route path = "/left-turn-legend" element={<LeftTurnLegend/>}/>
           <Route path = "*" element={<NotFound/>}/>
         </Routes>
       </Router>
