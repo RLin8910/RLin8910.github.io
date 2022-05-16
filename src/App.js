@@ -14,7 +14,7 @@ import FeatureRequests from './pages/the-street-king/FeatureRequests';
 import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Link
