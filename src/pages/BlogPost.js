@@ -1,29 +1,34 @@
-import React, { Component } from "react";
+const regex = /[^a-zA-Z0-9-]/ig;
 
-class BlogPost extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    componentDidMount(){
-        document.title = this.props.title + " | Raymond Lin";
-    }
-
-    render() {
-        return (
-            <div class="main-body">
-                <h1>{this.props.title}</h1>
-                <div className="secondary-body">
-                    <div style={{ "text-align": "center" }}>
-                        <img src="/images/global/nopages.jpg" width="50%" />
-                    </div>
-                    <p>The requested page could not be found.{'\r\n\r\n'}
-                        <a href="/">Return to home</a>
-                    </p>
-                </div>
-            </div>
-        );
+class BlogPost{
+    constructor(name, pagePath, contentPath, previewText, previewImage){
+        this.getName = function(){ return name; };
+        this.getPagePath = function(){ return pagePath; };
+        this.getContentPath = function(){ return contentPath; };
+        this.getPreviewText = function (){ return previewText; };
+        this.getPreviewImage = function (){ return previewImage; };
     }
 }
 
-export default BlogPost;
+const BLOG_DIR = '/blog-posts/';
+const BLOG_NAMES = [
+    'The Street King has been Published!',
+];
+const BLOG_PREVIEWS = BLOG_NAMES.map(name => 
+    {
+        const strippedName = name.toLowerCase().replaceAll(" ","-").replaceAll(regex,"");
+        return new BlogPost(
+            name, 
+            '/blog/'+strippedName, 
+            strippedName+'/post.html',
+            require('raw-loader!../blog-posts/'+strippedName+'/preview.html').default,
+            '/images/blog/'+strippedName+'/thumb.jpg',
+        )
+    }
+);
+
+function GetBlogs(){
+    return BLOG_PREVIEWS;
+}
+
+export default GetBlogs;

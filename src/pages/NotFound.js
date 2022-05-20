@@ -11,10 +11,10 @@ class NotFound extends Component {
 
     render() {
         return (
-            <div class="main-body">
+            <div className="main-body">
                 <h1>Page not Found</h1>
                 <div className="secondary-body">
-                    <div style={{ "text-align": "center" }}>
+                    <div style={{ "textAlign": "center" }}>
                         <img src="/images/global/nopages.jpg" width="50%" />
                     </div>
                     <p>The requested page could not be found.{'\r\n\r\n'}

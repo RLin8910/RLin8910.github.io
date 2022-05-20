@@ -11,13 +11,13 @@ class LeftTurnLegend extends Component {
 
     render() {
         return (
-            <div class="main-body">
+            <div className="main-body">
                 <h1>Left Turn Legend</h1>
                 <h2>Oval Circuit Racing, With a Twist!</h2>
-                <div class="u-16-9">
+                <div className="u-16-9">
                     <iframe src="https://youtube.com/embed/mXNs7Hg8TQk?playlist=mXNs7Hg8TQk&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Overview</h3>
                     <p>Left Turn Legend is a new game I'm working on for Android and iOS devices. It's an endless 
                         runner that parodies American oval circuit racing, but with a twist! {'Follow my '}
@@ -27,12 +27,12 @@ class LeftTurnLegend extends Component {
                         satirizing American captialism and consumer culture. The large array of sponsors 
                         each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.</p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Gallery</h3>
-                    <div class="u-row">
+                    <div className="u-row">
 
                     </div>
-                    <div class="u-row">
+                    <div className="u-row">
 
                     </div>
                 </div>

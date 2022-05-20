@@ -11,17 +11,17 @@ class FeatureRequests extends Component {
 
     render() {
         return (
-            <div class="main-body">
+            <div className="main-body">
                 <h1>The Street King</h1>
                 <h2>Feature Requests</h2>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Would you like to request something that is...</h3>
-                    <div class="u-row">
-                        <div class="u-half-column">
+                    <div className="u-row">
+                        <div className="u-half-column">
                             <h4><a href="https://docs.google.com/forms/d/e/1FAIpQLSfoY-6H5gR1FPhAvmFZ3m32Rvc3cGgpaoT_lbvYphWRyGpEkQ/viewform?usp=sf_link">...a car?</a></h4>
                             <img src="/images/tsk/cars.png" width="100%"/>
                         </div>
-                        <div class="u-half-column">
+                        <div className="u-half-column">
                             <h4><a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/suggestions">...not a car?</a></h4>
                             <img src="/images/tsk/notcar.png" width="100%"/>
                         </div>

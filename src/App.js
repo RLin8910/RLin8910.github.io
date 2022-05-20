@@ -14,7 +14,8 @@ import FeatureRequests from './pages/the-street-king/FeatureRequests';
 import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 // Blog
 import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import BlogPage from './pages/BlogPage';
+import GetBlogs from './pages/BlogPost';
 
 import {
   BrowserRouter as Router,
@@ -23,9 +24,10 @@ import {
   Link
 } from "react-router-dom";
 
-const blogs = ['blog1', 'blog2', 'blog3'];
+const BLOG_DIR = './blog-posts/';
 
 function App() {
+  const blogs = GetBlogs();
   return(
     <div className="page-container">
       <NavBar/>
@@ -40,8 +42,8 @@ function App() {
           <Route path = "/blog" element={<Blog/>}/>
           {
             blogs.map((blog) =>{
-              return (<Route path = {'/blog/'+blog} element = {<BlogPost
-                title={blog}
+              return (<Route path = {blog.getPagePath()} key={blog.getPagePath()} element = {<BlogPage
+                title={blog.getName()} filename = {blog.getContentPath()}
               />}/>);
             })
           }

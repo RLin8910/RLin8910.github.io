@@ -11,10 +11,10 @@ class PrivacyPolicy extends Component {
 
     render() {
         return (
-            <div class="main-body">
+            <div className="main-body">
                 <h1>Privacy Policy</h1>
                 <h2><a href="/the-street-king">The Street King</a></h2>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <p>Raymond Lin built the The Street King app as an Ad Supported app. 
                         This SERVICE is provided by Raymond Lin at no cost and is intended for use as is.{'\r\n\r\n'}
                         This page is used to inform visitors regarding my policies with the collection, use, and 
@@ -27,7 +27,7 @@ class PrivacyPolicy extends Component {
                         which is accessible at The Street King unless otherwise defined in this Privacy Policy.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Information Collection and Use</h3>
                     <p>
                         For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
@@ -35,7 +35,7 @@ class PrivacyPolicy extends Component {
                         The app does use third party services that may collect information used to identify you.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Links to Privacy Policies of Third Party Service Providers Used by the App</h3>
                     <ul>
                         <li><a href="https://policies.google.com/privacy">Google Play Services</a></li>
@@ -43,7 +43,7 @@ class PrivacyPolicy extends Component {
                         <li><a href="https://www.yodo1.com/privacy">Yodo1 Ads</a></li>
                     </ul>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Log Data</h3>
                     <p>
                         I want to inform you that whenever you use my Service, in a case of 
@@ -53,7 +53,7 @@ class PrivacyPolicy extends Component {
                         when utilizing my Service, the time and date of your use of the Service, and other statistics.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Cookies</h3>
                     <p>
                         Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. 
@@ -65,7 +65,7 @@ class PrivacyPolicy extends Component {
                         choose to refuse our cookies, you may not be able to use some portions of this Service.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Service Providers</h3>
                     <p>
                         I may employ third-party companies and individuals due to the following reasons:
@@ -82,7 +82,7 @@ class PrivacyPolicy extends Component {
                         However, they are obligated not to disclose or use the information for any other purpose.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Security</h3>
                     <p>
                         I value your trust in providing us your Personal Information, thus we are striving to use 
@@ -91,7 +91,7 @@ class PrivacyPolicy extends Component {
                         guarantee its absolute security.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Links to Other Sites</h3>
                     <p>
                         This Service may contain links to other sites. If you click on a third-party link, you will 
@@ -101,7 +101,7 @@ class PrivacyPolicy extends Component {
                         sites or services.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Children's Privacy</h3>
                     <p>
                         These Services do not address anyone under the age of 13. I do not knowingly collect personally 
@@ -111,7 +111,7 @@ class PrivacyPolicy extends Component {
                         information, please contact me so that I will be able to do necessary actions.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Changes to This Privacy Privacy</h3>
                     <p>
                         I may update our Privacy Policy from time to time. Thus, you are advised to review this page 
@@ -119,7 +119,7 @@ class PrivacyPolicy extends Component {
                         Policy on this page. These changes are effective immediately after they are posted on this page.
                     </p>
                 </div>
-                <div class="secondary-body">
+                <div className="secondary-body">
                     <h3>Contact</h3>
                     <p>
                         If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.

@@ -18,7 +18,7 @@ import React, { Component } from "react";
                 <a href="/blog">Blog</a>
                 <div className="dropdown">
                     <button className="dropdown-button">
-                        <a href="javascript:void(0)">Games</a>
+                        <a href={void(0)} onClick={this.onClick}>Games</a>
                         <div className="plus-container">
                             <img src="/images/global/plus.svg"></img>
                         </div>
@@ -30,7 +30,7 @@ import React, { Component } from "react";
                 </div>
                 <div className="dropdown">
                     <button className="dropdown-button">
-                        <a href="javascript:void(0)">Social</a>
+                        <a href={void(0)} onClick={this.onClick}>Social</a>
                         <div className="plus-container">
                             <img src="/images/global/plus.svg"></img>
                         </div>
