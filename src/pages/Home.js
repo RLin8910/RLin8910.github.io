@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import GetBlogs from "./BlogPost";
 
 class Home extends Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class Home extends Component {
     }
 
     render() {
+        const latestBlog = GetBlogs()[0];
         return (
             <div className="main-body">
                 <h1>Game Developer,  Programmer,  Artist</h1>
@@ -57,6 +59,30 @@ class Home extends Component {
                                 {'\r\n\r\n'}
                                 <a href="/left-turn-legend">Read More...</a>
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Latest Blog Post</h1>
+                <div className="secondary-body">
+                    <div className="u-row" key={latestBlog.getPagePath()}>
+                        <div key={latestBlog.getPagePath()+"_text"} className="u-half-column">
+                            <h2>
+                                <a href={latestBlog.getPagePath()}>{latestBlog.getName()}</a>
+                            </h2>
+                            <h3>
+                                {latestBlog.getDate()}
+                            </h3>
+                            <p>
+                                {latestBlog.getPreviewText()+'\r\n\r\n'}
+                                <a href={latestBlog.getPagePath()}>Read More...</a>
+                                {'\r\n\r\n'}
+                                <a href="/blog">View All Posts</a>
+                            </p>
+                        </div>
+                        <div key={latestBlog.getPagePath()+"_image"} className="u-half-column">
+                            <a href={latestBlog.getPagePath()}>
+                                <img src={latestBlog.getPreviewImage()}/>
+                            </a>
                         </div>
                     </div>
                 </div>
