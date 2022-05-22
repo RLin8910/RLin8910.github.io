@@ -24,7 +24,7 @@ class LeftTurnLegend extends Component {
                         <a href="https://youtube.com/playlist?list=PLvWoPUN7LnBqf0tG76klh_5G9xOvinwsS">devlog series</a> 
                         {' to'} see how the game grows and changes over time.{'\r\n\r\n'}
                         The game focuses on intense short-track races with lots of crazy crashes while 
-                        satirizing American captialism and consumer culture. The large array of sponsors 
+                        satirizing American capitalism and consumer culture. The large array of sponsors 
                         each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.</p>
                 </div>
             </div>
