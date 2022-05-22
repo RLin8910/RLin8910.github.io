@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'The Street King is Now Available on iOS!',
     'One Year of Progress!',
     'Devlog #5 for Left Turn Legend - Marketing Madness!',
     "Devlog #3 for Left Turn Legend - Three's a Crowd!",

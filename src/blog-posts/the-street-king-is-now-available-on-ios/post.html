@@ -1,0 +1,24 @@
+<p>After months of work starting back from the beginning of this year, The Street King has finally been released for iOS devices!
+
+You can download it for iOS <a href="https://apps.apple.com/us/app/the-street-king/id1615309661">here</a> or for Android <a href="https://play.google.com/store/apps/details?id=com.RaymondLin.TheStreetKing">here</a>
+    
+This is a dream come true for me - ever since I started development of the game, the plan was <i>always</i> to release it for both Android and iOS. So, why was it released right away on Android, while iOS has taken so long?</p>
+
+<h3>iOS vs. Android Development Costs</h3>
+<p>Although they both fall under the umbrella category of mobile devices, Android and iOS devices are quite different when it comes to their underlying architecture. Fortunately for me, I developed The Street King using Unity Engine, which supports exports to both platforms without requiring me to write native code for the game for all types of devices. However, iOS's app build process is proprietary - iOS Apps <i>must</i> be built using an Apple Mac. While there are technically ways to setup a virtual machine running Mac OSX, the legality of these methods is questionable, and the reliability of such a system is also something I didn't want to have to worry about.
+
+In contrast, pretty much any computer can create Android builds with the use of Android Studio and the Android SDK. These are free to download and work on both Mac and Windows, so creating Android builds is much more accessible.
+
+As a result, I needed to buy a Mac just to begin work on an iOS port. This presented a huge barrier for me, but slowly over the course of the past 3 years, enough money has trickled in from in-app purchases and my <a href="https://patreon.com/TheStreetKing">Patreon Page</a>, so I was able to get a Mac and start developing!</p>
+<p><img src="/media/blog/the-street-king-is-now-available-on-ios/mac.jpg"></img></p>
+<h3>The Porting Process</h3>
+<p>As I mentioned earlier, Unity thankfully takes care of most of the heavily lifting when it comes to switching platforms. This includes making sure that functionality like touches remains identical across devices and supporting different hardware like GPUs. However, there were still a number of platform-specific differences I needed to account for.</p>
+<p><img src="/media/blog/the-street-king-is-now-available-on-ios/ipad.jpg"></img></p>
+<p>While Android devices can rely on Google Play Games for achievements, leaderboards, and cloud saves, the iOS equivalent is Game Center. Google has an official Unity package for Play Games support complete with documentation, so the original implementation of Android socials was relatively straightforward. In contrast, there is no official iOS Unity package, and my initial search yielded only paid Unity packages which were way outside of my budget of $0. I eventually found one free package which worked, but had almost no documentation. Building up GameCenter support through this package was a bit painful and mostly involved trial and error, but it thankfully ended up being a success.</p>
+<p><img src="/media/blog/the-street-king-is-now-available-on-ios/filesystem.png"></img></p>
+<p>Another major difference between Android and iOS is the way files are handled. Android devices give users much more freedom in how they manipulate files, while iOS heavily restricts access to files. It's a tradeoff between freedom and convenience which required me to rework the decal export system on iOS in order to account for the difference in file privileges.
+
+There were a number of other small issues as well which mostly involved trial-and-error to solve, so I steadily chipped away at the long list of things to fix and implement until I was ready to release the game!</p>
+<div class="u-16-9">
+    <iframe src="https://youtube.com/embed/On9heiTknvQ?playlist=On9heiTknvQ&autoplay=0&mute=0&loop=1"></iframe>
+</div>
