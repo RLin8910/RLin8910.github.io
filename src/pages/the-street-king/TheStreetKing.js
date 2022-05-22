@@ -32,30 +32,30 @@ class TheStreetKing extends Component {
                     <h5>Click to Enlarge Images</h5>
                     <div className="u-row">
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/build-your-ride.png"><img src="/images/tsk/gallery/build-your-ride-low.png"/></a>
+                            <a href="/media/tsk/gallery/build-your-ride.png"><img src="/media/tsk/gallery/build-your-ride-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/cop-chases.png"><img src="/images/tsk/gallery/cop-chases-low.png"/></a>
+                            <a href="/media/tsk/gallery/cop-chases.png"><img src="/media/tsk/gallery/cop-chases-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/crews.png"><img src="/images/tsk/gallery/crews-low.png"/></a>
+                            <a href="/media/tsk/gallery/crews.png"><img src="/media/tsk/gallery/crews-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/devilish-deeds.png"><img src="/images/tsk/gallery/devilish-deeds-low.png"/></a>
+                            <a href="/media/tsk/gallery/devilish-deeds.png"><img src="/media/tsk/gallery/devilish-deeds-low.png"/></a>
                         </div>
                     </div>
                     <div className="u-row">
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/environments.png"><img src="/images/tsk/gallery/environments-low.png"/></a>
+                            <a href="/media/tsk/gallery/environments.png"><img src="/media/tsk/gallery/environments-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/race-online.png"><img src="/images/tsk/gallery/race-online-low.png"/></a>
+                            <a href="/media/tsk/gallery/race-online.png"><img src="/media/tsk/gallery/race-online-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/twin-turbo.png"><img src="/images/tsk/gallery/twin-turbo-low.png"/></a>
+                            <a href="/media/tsk/gallery/twin-turbo.png"><img src="/media/tsk/gallery/twin-turbo-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/images/tsk/gallery/weather.png"><img src="/images/tsk/gallery/weather-low.png"/></a>
+                            <a href="/media/tsk/gallery/weather.png"><img src="/media/tsk/gallery/weather-low.png"/></a>
                         </div>
                     </div>
                 </div>

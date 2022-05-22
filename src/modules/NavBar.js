@@ -20,7 +20,7 @@ import React, { Component } from "react";
                     <button className="dropdown-button">
                         <a href={void(0)} onClick={this.onClick}>Games</a>
                         <div className="plus-container">
-                            <img src="/images/global/plus.svg"></img>
+                            <img src="/media/global/plus.svg"></img>
                         </div>
                     </button>
                     <div className="dropdown-content" style={{width: '210%'}}>
@@ -32,7 +32,7 @@ import React, { Component } from "react";
                     <button className="dropdown-button">
                         <a href={void(0)} onClick={this.onClick}>Social</a>
                         <div className="plus-container">
-                            <img src="/images/global/plus.svg"></img>
+                            <img src="/media/global/plus.svg"></img>
                         </div>
                     </button>
                     <div className="dropdown-content" style = {{width: '240%'}}>

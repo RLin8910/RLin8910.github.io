@@ -35,7 +35,7 @@ class Home extends Component {
                             </p>
                         </div>
                         <div className="u-half-column">
-                            <img src="/images/tsk/tsk.png" />
+                            <img src="/media/tsk/tsk.png" />
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ class Home extends Component {
                     <h3>Oval Circuit Racing, With a Twist!</h3>
                     <div className="u-row">
                         <div className="u-half-column">
-                            <img src="/images/ltl/ltl.png" />
+                            <img src="/media/ltl/ltl.png" />
                         </div>
                         <div className="u-half-column">
                             <p>The craziest stock car racing game you've ever seen! Collect classic

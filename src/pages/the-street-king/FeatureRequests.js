@@ -19,11 +19,11 @@ class FeatureRequests extends Component {
                     <div className="u-row">
                         <div className="u-half-column">
                             <h4><a href="https://docs.google.com/forms/d/e/1FAIpQLSfoY-6H5gR1FPhAvmFZ3m32Rvc3cGgpaoT_lbvYphWRyGpEkQ/viewform?usp=sf_link">...a car?</a></h4>
-                            <img src="/images/tsk/cars.png"/>
+                            <img src="/media/tsk/cars.png"/>
                         </div>
                         <div className="u-half-column">
                             <h4><a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/suggestions">...not a car?</a></h4>
-                            <img src="/images/tsk/notcar.png"/>
+                            <img src="/media/tsk/notcar.png"/>
                         </div>
                     </div>
                 </div>

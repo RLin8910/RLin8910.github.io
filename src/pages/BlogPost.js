@@ -28,7 +28,7 @@ const BLOG_PREVIEWS = BLOG_NAMES.map(name =>
             '/blog/'+strippedName, 
             strippedName+'/post.html',
             require('raw-loader!../blog-posts/'+strippedName+'/preview.html').default,
-            '/images/blog/'+strippedName+'/thumb.jpg',
+            '/media/blog/'+strippedName+'/thumb.jpg',
         )
     }
 );

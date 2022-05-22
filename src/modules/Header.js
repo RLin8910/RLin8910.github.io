@@ -11,7 +11,7 @@ import React, { Component } from "react";
     render() {
       return (
         <div>
-          <img src="/images/global/banner.jpg" width={"100%"}/>
+          <img src="/media/global/banner.jpg" width={"100%"}/>
         </div>
       );
     }
