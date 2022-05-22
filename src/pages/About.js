@@ -15,7 +15,14 @@ class About extends Component {
                 <h1>About</h1>
                 <div className="secondary-body">
                     <p>
-                        <img src="/media/tsk/gallery/devilish-deeds.png"></img>
+                        <div className="u-row">
+                            <div className="u-half-column">
+                                <img src="/media/tsk/tsk.png"></img>
+                            </div>
+                            <div className="u-half-column">
+                                <img src="/media/ltl/ltl.png"></img>
+                            </div>
+                        </div>
                         My name is Raymond, and I'm a solo game developer. I've been super interested in games and
                         computers from a young age, so picking up game dev was a natural next step!
                         {'\r\n\r\n'}

@@ -27,15 +27,6 @@ class LeftTurnLegend extends Component {
                         satirizing American captialism and consumer culture. The large array of sponsors 
                         each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.</p>
                 </div>
-                <div className="secondary-body">
-                    <h3>Gallery</h3>
-                    <div className="u-row">
-
-                    </div>
-                    <div className="u-row">
-
-                    </div>
-                </div>
             </div>
         );
     }
