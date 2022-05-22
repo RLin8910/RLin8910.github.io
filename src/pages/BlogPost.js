@@ -13,6 +13,16 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'One Year of Progress!',
+    'Devlog #5 for Left Turn Legend - Marketing Madness!',
+    "Devlog #3 for Left Turn Legend - Three's a Crowd!",
+    'Devlog #2 for Left Turn Legend',
+    'Introducing My Next Project - Left Turn Legend',
+    "The '80s Update is Here!!!",
+    'Online Multiplayer, Discord Server, and Patreon Page are Here!',
+    'Multiplayer, Privacy, and the Future of The Street King',
+    'Tuners Update',
+    'Weather Effects Coming Soon!',
     'A New Car is Here!',
     'Another Work in Progress',
     'New Cars are Coming Soon!!!',
