@@ -22,7 +22,7 @@ class LeftTurnLegend extends Component {
                     <p>Left Turn Legend is a new game I'm working on for Android and iOS devices. It's an endless 
                         runner that parodies American oval circuit racing, but with a twist! {'Follow my '}
                         <a href="https://youtube.com/playlist?list=PLvWoPUN7LnBqf0tG76klh_5G9xOvinwsS">devlog series</a> 
-                        {' to'} see how the game grows and changes over time.{'\r\n\r\n'}
+                        {' to '}see how the game grows and changes over time.{'\r\n\r\n'}
                         The game focuses on intense short-track races with lots of crazy crashes while 
                         satirizing American capitalism and consumer culture. The large array of sponsors 
                         each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.</p>
