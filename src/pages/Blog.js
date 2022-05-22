@@ -22,6 +22,9 @@ class Blog extends Component {
                                 <h2>
                                     <a href={blog.getPagePath()}>{blog.getName()}</a>
                                 </h2>
+                                <h3>
+                                    {blog.getDate()}
+                                </h3>
                                 <p>
                                     {blog.getPreviewText()+'\r\n\r\n'}
                                     <a href={blog.getPagePath()}>Read More...</a>
@@ -31,7 +34,7 @@ class Blog extends Component {
                         const image = (
                             <div key={blog.getPagePath()+"_image"} className="u-half-column">
                                 <a href={blog.getPagePath()}>
-                                    <img src={blog.getPreviewImage()} width="100%"/>
+                                    <img src={blog.getPreviewImage()}/>
                                 </a>
                             </div>
                         )

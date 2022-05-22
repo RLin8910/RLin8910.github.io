@@ -43,7 +43,7 @@ function App() {
           {
             blogs.map((blog) =>{
               return (<Route path = {blog.getPagePath()} key={blog.getPagePath()} element = {<BlogPage
-                title={blog.getName()} filename = {blog.getContentPath()}
+                title={blog.getName()} date={blog.getDate()} filename = {blog.getContentPath()}
               />}/>);
             })
           }

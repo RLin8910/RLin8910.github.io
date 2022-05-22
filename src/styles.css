@@ -185,6 +185,10 @@ iframe{
   background-color: var(--secondary-foreground-color);
 }
 
+.secondary-body img{
+  width: 100%;
+}
+
 .dropdown{
   height: 100%;
   position: relative;
