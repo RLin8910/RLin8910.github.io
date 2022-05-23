@@ -246,6 +246,16 @@ iframe{
   align-items: center;
 }
 
+.u-third-column {
+  width: calc(33.33333% - var(--margin)*2/3);
+  align-items: center;
+}
+
+.u-two-third-column {
+  width: calc(66.66666% - var(--margin)*4/3);
+  align-items: center;
+}
+
 .u-fourth-column {
   width: calc(25% - var(--margin)/2);
   align-items: center;

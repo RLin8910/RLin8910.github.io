@@ -17,6 +17,10 @@ import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 import Blog from './pages/Blog';
 import BlogPage from './pages/BlogPage';
 import GetBlogs from './pages/BlogPost';
+// Minigames
+import Minigames from './pages/Minigames';
+import MinigamePage from './pages/MinigamePage';
+import GetMinigames from './pages/MinigameEntry';
 
 import {
   BrowserRouter as Router,
@@ -29,6 +33,7 @@ const BLOG_DIR = './blog-posts/';
 
 function App() {
   const blogs = GetBlogs();
+  const minigames = GetMinigames();
   return(
     <div className="page-container">
       <NavBar/>
@@ -47,6 +52,16 @@ function App() {
               return (<Route path = {blog.getPagePath()} key={blog.getPagePath()} element = {<BlogPage
                 title={blog.getName()} date={blog.getDate()} filename = {blog.getContentPath()} url={blog.getPagePath()}
               />}/>);
+            })
+          }
+          <Route path = "/minigames" element={<Minigames/>}/>
+          {
+            minigames.map((minigame) =>{
+              return(<Route path={minigame.getPagePath()} key={minigame.getPagePath()} element={
+                <MinigamePage title={minigame.getName()} filename={minigame.getContentPath()} url={minigame.getPagePath()}
+                  gamePath={minigame.getGamePath()}
+                />
+              }/>);
             })
           }
           <Route path = "*" element={<NotFound/>}/>

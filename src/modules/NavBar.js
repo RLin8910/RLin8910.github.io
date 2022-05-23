@@ -27,6 +27,7 @@ import React, { Component } from "react";
                     <div className="dropdown-content" style={{width: '210%'}}>
                         <a href="/the-street-king">The Street King</a>
                         <a href="/left-turn-legend">Left Turn Legend</a>
+                        <a href="/minigames">Minigames</a>
                     </div>
                 </div>
                 <div className="dropdown">
