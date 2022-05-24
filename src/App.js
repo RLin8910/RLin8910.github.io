@@ -59,7 +59,7 @@ function App() {
             minigames.map((minigame) =>{
               return(<Route path={minigame.getPagePath()} key={minigame.getPagePath()} element={
                 <MinigamePage title={minigame.getName()} filename={minigame.getContentPath()} url={minigame.getPagePath()}
-                  gamePath={minigame.getGamePath()}
+                  gamePath={minigame.getGamePath()} thumbPath={minigame.getPreviewImage()}
                 />
               }/>);
             })

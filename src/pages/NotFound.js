@@ -15,7 +15,7 @@ class NotFound extends Component {
                 <h1>Page not Found</h1>
                 <div className="secondary-body">
                     <div style={{ "textAlign": "center" }}>
-                        <img src="/media/global/nopages.jpg" width="50%" />
+                        <p><img src="/media/global/nopages.jpg"/></p>
                     </div>
                     <p>The requested page could not be found.{'\r\n\r\n'}
                         <a href="/">Return to home</a>

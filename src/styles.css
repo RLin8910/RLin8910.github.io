@@ -108,6 +108,27 @@ iframe{
   border: none;
 }
 
+.button-holder {
+  position: relative;
+}
+
+.button-holder button{
+  background-color: transparent;
+  border-style: none;
+  width:10%;
+  aspect-ratio: 1;
+}
+
+.button-holder button img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.button-holder button:hover img{
+  opacity: 1;
+}
+
 .footer h5{
   padding: 0;
 }
@@ -137,6 +158,7 @@ iframe{
   height: min(5vh, 5vw);
   display: flex;
   align-items: top;
+  z-index: 100;
 }
 
 .navbar a{
@@ -232,7 +254,27 @@ iframe{
   height: 40%;
 }
 
+.fullscreen-button {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width:5%;
+}
+
+.fullscreen-button button{
+  width: 100%;
+  height: 100%;
+}
+
 /* utility */
+/* */
+.u-centered-items{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /* placement utility */
 .u-row {
   margin: 0;
@@ -261,16 +303,25 @@ iframe{
   align-items: center;
 }
 
-/* iframe utility */
-.u-16-9, .u-21-9, .u-margin-image{
+/* aspect utility */
+.u-16-9, .u-21-9 {
   margin-left: var(--margin);
   margin-right: var(--margin);
+  margin-top: var(--m);
+  margin-bottom: var(--m);
 }
 
-.u-16-9 iframe{
+.u-16-9 .secondary-body, .u-16-9 .main-body, .u-16-9 iframe, .u-16-9 img, 
+.u-21-9 .secondary-body, .u-21-9 .main-body, .u-21-9 iframe, .u-21-9 img{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.u-16-9 .secondary-body, .u-16-9 .main-body, .u-16-9 iframe, .u-16-9 img{
   aspect-ratio: 16 / 9;
 }
 
-.u-21-9 iframe{
+.u-21-9 .secondary-body, .u-21-9 .main-body, .u-21-9 iframe, .u-21-9 img{
   aspect-ratio: 21 / 9;
 }
