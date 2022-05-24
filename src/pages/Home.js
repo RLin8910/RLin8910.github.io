@@ -37,17 +37,17 @@ class Home extends Component {
                             </p>
                         </div>
                         <div className="u-half-column">
-                            <img src="/media/tsk/tsk.png" />
+                            <a href="/the-street-king"><img src="/media/tsk/tsk.png" /></a>
                         </div>
                     </div>
                 </div>
 
                 <div className="secondary-body">
-                    <h2><a href="left-turn-legend">Left Turn Legend</a></h2>
+                    <h2><a href="/left-turn-legend">Left Turn Legend</a></h2>
                     <h3>Oval Circuit Racing, With a Twist!</h3>
                     <div className="u-row">
                         <div className="u-half-column">
-                            <img src="/media/ltl/ltl.png" />
+                            <a href="/left-turn-legend"><img src="/media/ltl/ltl.png" /></a>
                         </div>
                         <div className="u-half-column">
                             <p>The craziest stock car racing game you've ever seen! Collect classic
@@ -62,9 +62,30 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="secondary-body">
+                    <h2><a href="/minigames">Minigames</a></h2>
+                    <h3>A Collection of My Smaller Projects!</h3>
+                    <div className="u-row">
+                        <div className="u-half-column">
+                            <p>In addition to larger, fleshed-out games, I've also done a number of smaller projects for
+                               various game jams and other events. Check them out!
+                                {'\r\n\r\n'}
+                                <a href="/minigames">Read More...</a>
+                            </p>
+                        </div>
+                        <div className="u-half-column">
+                            <a href="/minigames"><img src="/media/minigames/minigames.png" /></a>
+                        </div>
+                    </div>
+                </div>
                 <h1>Latest Blog Post</h1>
                 <div className="secondary-body">
                     <div className="u-row" key={latestBlog.getPagePath()}>
+                        <div key={latestBlog.getPagePath()+"_image"} className="u-half-column">
+                            <a href={latestBlog.getPagePath()}>
+                                <img src={latestBlog.getPreviewImage()}/>
+                            </a>
+                        </div>
                         <div key={latestBlog.getPagePath()+"_text"} className="u-half-column">
                             <h2>
                                 <a href={latestBlog.getPagePath()}>{latestBlog.getName()}</a>
@@ -78,11 +99,6 @@ class Home extends Component {
                                 {'\r\n\r\n'}
                                 <a href="/blog">View All Posts</a>
                             </p>
-                        </div>
-                        <div key={latestBlog.getPagePath()+"_image"} className="u-half-column">
-                            <a href={latestBlog.getPagePath()}>
-                                <img src={latestBlog.getPreviewImage()}/>
-                            </a>
                         </div>
                     </div>
                 </div>
