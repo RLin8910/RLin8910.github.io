@@ -47,8 +47,11 @@ class MinigamePage extends Component {
                         </div>
                         :
                         <div className="secondary-body u-centered-items button-holder">
+                            <img src={this.props.thumbPath} style=
+                            {{position: "absolute", width: "100%", opacity: "50%"}}/>
                             <button 
                                 className="u-centered-items"
+                                style={{position: "absolute"}}
                                 onClick={this.handleClick}
                             >
                                 <img src="/media/global/play.svg"/>
@@ -56,10 +59,7 @@ class MinigamePage extends Component {
                         </div>
                     }
                 </div>
-                <div className="secondary-body">
-                    <h2>Details</h2>
-                    <div dangerouslySetInnerHTML={{__html: this.content}}></div>
-                </div>
+                <div dangerouslySetInnerHTML={{__html: this.content}}></div>
                 <div className="secondary-body">
                     <h2>Comments</h2>
                     <p>

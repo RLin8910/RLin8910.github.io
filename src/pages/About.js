@@ -6,7 +6,7 @@ class About extends Component {
     }
 
     componentDidMount(){
-        document.title = "Raymond Lin";
+        document.title = "About | Raymond Lin";
     }
 
     render() {
