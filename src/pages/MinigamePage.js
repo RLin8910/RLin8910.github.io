@@ -13,7 +13,6 @@ class MinigamePage extends Component {
     }
 
     render() {
-        console.log(this.props.url);
         return (
             <div className="main-body">
                 <h1>{this.props.title}</h1>
@@ -28,6 +27,7 @@ class MinigamePage extends Component {
                 </div>
                 <p><a href="Fullscreen">Fullscreen</a></p>
                 <div className="secondary-body">
+                    <h2>Details</h2>
                     <div dangerouslySetInnerHTML={{__html: this.content}}></div>
                 </div>
                 <div className="secondary-body">

@@ -13,7 +13,11 @@ class MinigamePage{
 
 // dictionary of names of games to directories
 const MINIGAMES = {
-    'No Beaches': "https://v6p9d9t4.ssl.hwcdn.net/html/5841499/index.html",
+    'No Beaches': "https://v6p9d9t4.ssl.hwcdn.net/html/5842170/index.html",
+    'Bonk': "https://v6p9d9t4.ssl.hwcdn.net/html/5842211/index.html",
+    'Stupi Square and Sussy Circle': "https://v6p9d9t4.ssl.hwcdn.net/html/5842256/index.html",
+    'Fish and Crips': "https://v6p9d9t4.ssl.hwcdn.net/html/5842339/index.html",
+    'Click': "https://v6p9d9t4.ssl.hwcdn.net/html/5842361/index.html",
 }
 const MINIGAME_PREVIEWS = Object.entries(MINIGAMES).map(([name, gamePath]) => 
     {

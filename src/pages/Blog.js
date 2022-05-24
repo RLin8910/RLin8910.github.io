@@ -38,7 +38,7 @@ class Blog extends Component {
                                 </a>
                             </div>
                         )
-                        const content = i % 2 == 0 ? [image, text] : [text, image];
+                        const content = i % 2 === 0 ? [image, text] : [text, image];
                         return (
                             <div className="secondary-body">
                                 <div className="u-row" key={blog.getPagePath()}>

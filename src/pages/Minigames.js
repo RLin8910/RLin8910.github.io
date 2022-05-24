@@ -16,7 +16,20 @@ class Minigames extends Component {
         return (
             <div className="main-body">
                 <h1>Minigames</h1>
-                <h2>A Collection of My Smaller Projects!</h2>
+                <div className="secondary-body">
+                    <h2>A Collection of My Smaller Projects!</h2>
+                    <p>
+                        Although I mostly focus on making bigger games, I've also done a few smaller projects for various game jams!
+                        There isn't really a common thread tying these games together besides having a limited scope - they each
+                        have their own thing going on and are completely self-contained.
+                        {'\r\n\r\n'}
+                        Each of these games was made with a heavily restricted timeline. Some of them, like{' '}
+                        <a href="/minigames/click">Click</a>, were made in the span of a few hours, while others, like{' '}
+                        <a href="/minigames/no-beaches">No Beaches</a>, took me several days.
+                        {'\r\n\r\n'}
+                        Every game here can be played in-browser and is fully supported on computers. Some also have mobile support.
+                    </p>
+                </div>
                 {
                     minigames.map((minigame, i) => {
                         const text = (
@@ -37,7 +50,7 @@ class Minigames extends Component {
                                 </a>
                             </div>
                         )
-                        const content = i % 2 == 0 ? [image, text] : [text, image];
+                        const content = i % 2 === 0 ? [image, text] : [text, image];
                         return (
                             <div className="secondary-body">
                                 <div className="u-row" key={minigame.getPagePath()}>
