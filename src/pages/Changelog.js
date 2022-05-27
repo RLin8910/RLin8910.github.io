@@ -14,7 +14,7 @@ class Changelog extends Component {
             <div className="main-body">
                 <h1>Site Changelog</h1>
                 <div className="secondary-body">
-                    <h2>May 24, 2022</h2>
+                    <h2>May 27, 2022</h2>
                     <ul>
                         <li>Added <a href="/minigames">minigames</a> page with 5 new minigames!</li>
                         <li>Added <a href="/changelog">site changelog</a>.</li>

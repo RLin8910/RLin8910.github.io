@@ -27,9 +27,10 @@ class About extends Component {
                         computers from a young age, so picking up game dev was a natural next step!
                         {'\r\n\r\n'}
                         I've now been making games for almost 10 years. Although many of my first projects were
-                        never published and have now been lost to time, I do have one published game:{' '}
+                        never published and have now been lost to time, I do have one major published game,{' '}
                         <a href="/the-street-king">The Street King</a>, as well as another project in
-                        development called <a href="/left-turn-legend">Left Turn Legend</a>. As you can probably
+                        development called <a href="/left-turn-legend">Left Turn Legend</a>. I also created several{' '}
+                        <a href="/minigames">smaller games</a> which can be found right here on this site. As you can probably
                         tell from these games, I love cars and racing, so they have been the primary focus of my
                         projects.
                         {'\r\n\r\n'}
