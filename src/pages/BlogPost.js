@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'Game Modding: NASCAR in Street Legal Racing: Redline',
     'Minigame Madness!',
     'Welcome to My New Website!',
     'The Street King is Now Available on iOS!',
