@@ -13,6 +13,7 @@ class MinigamePage{
 
 // dictionary of names of games to directories
 const MINIGAMES = {
+    'Neom': "https://v6p9d9t4.ssl.hwcdn.net/html/6693689/index.html",
     'No Beaches': "https://v6p9d9t4.ssl.hwcdn.net/html/5842170/index.html",
     'Bonk': "https://v6p9d9t4.ssl.hwcdn.net/html/5842211/index.html",
     'Stupi Square and Sussy Circle': "https://v6p9d9t4.ssl.hwcdn.net/html/5842256/index.html",
