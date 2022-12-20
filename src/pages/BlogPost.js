@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'Creating OVER 300 Concepts for Dodge\'s Return to NASCAR',
     'Game Modding: NASCAR in Street Legal Racing: Redline',
     'Minigame Madness!',
     'Welcome to My New Website!',

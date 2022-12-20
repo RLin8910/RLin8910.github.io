@@ -82,6 +82,13 @@ ul {
   white-space: normal;
 }
 
+/* ordered list */
+ul {
+  margin-left: calc(2*var(--margin));
+  margin-right: var(--margin);
+  white-space: normal;
+}
+
 /* unvisited link */
 a:link {
   text-decoration: underline;
