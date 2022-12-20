@@ -83,7 +83,7 @@ ul {
 }
 
 /* ordered list */
-ul {
+ol {
   margin-left: calc(2*var(--margin));
   margin-right: var(--margin);
   white-space: normal;
