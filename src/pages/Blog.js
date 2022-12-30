@@ -26,7 +26,7 @@ class Blog extends Component {
                                     {blog.getDate()}
                                 </h3>
                                 <p>
-                                    {blog.getPreviewText()+'\r\n\r\n'}
+                                    <div dangerouslySetInnerHTML={{__html: blog.getPreviewText()+'\r\n\r\n'}} />
                                     <a href={blog.getPagePath()}>Read More...</a>
                                 </p>
                             </div>

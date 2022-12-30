@@ -94,7 +94,7 @@ class Home extends Component {
                                 {latestBlog.getDate()}
                             </h3>
                             <p>
-                                {latestBlog.getPreviewText()+'\r\n\r\n'}
+                                <div dangerouslySetInnerHTML={{__html: latestBlog.getPreviewText()+'\r\n\r\n'}}/>
                                 <a href={latestBlog.getPagePath()}>Read More...</a>
                                 {'\r\n\r\n'}
                                 <a href="/blog">View All Posts</a>

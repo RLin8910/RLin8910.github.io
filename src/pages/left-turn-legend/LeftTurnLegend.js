@@ -15,7 +15,7 @@ class LeftTurnLegend extends Component {
                 <h1>Left Turn Legend</h1>
                 <h2>Oval Circuit Racing, With a Twist!</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/iEyottzp2Dw?playlist=iEyottzp2Dw&autoplay=1&mute=1&loop=1"></iframe>
+                    <iframe src="https://youtube.com/embed/cVkCJxEQ92c?playlist=cVkCJxEQ92c&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
