@@ -115,6 +115,14 @@ iframe{
   border: none;
 }
 
+/* figure */
+figure {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  white-space: pre-wrap;
+  font-style: italic;
+}
+
 .button-holder {
   position: relative;
 }

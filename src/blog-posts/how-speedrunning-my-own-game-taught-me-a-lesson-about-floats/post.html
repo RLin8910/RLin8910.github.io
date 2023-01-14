@@ -1,0 +1,66 @@
+<p><img src="/media/blog/how-speedrunning-my-own-game-taught-me-a-lesson-about-floats/thumb.jpg"></img></p>
+<h3>Introduction</h3>
+<p>For the past ~8 or so years, I've been working on a single game called <a href="/the-street-king">The Street King</a>. I released it to the public for <a href="https://play.google.com/store/apps/details?id=com.RaymondLin.TheStreetKing">Android devices</a> around four years ago and have continued to update the game since, including publishing an <a href="https://apps.apple.com/us/app/the-street-king/id1615309661">iOS version</a> about a year ago.</p>
+<p>Recently, I thought it would be fun to try speedrunning the entire singleplayer campaign of the game from start to finish in a single sitting. There are 90 singleplayer races for the player to progress through as they upgrade their car and face tougher and tougher opponents. Although there are a bunch more side goals to get 100% completion, I decided that just beating the final boss would be a good enough speedrun target for my first attempt.</p>
+<p>I'd never beaten the game in a single sitting before, but I knew that it would take roughly 5 hours to complete. My prediction was pretty much spot-on, with my final time being 5 hours, 12 minutes, and 32 seconds. What I hadn't managed to predict, however, was an interesting bug relating to floating-point numbers which would crop up a few hours into the stream.</p>
+<h3>Floating-Point Values</h3>
+<p><a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">Floating-point numbers</a> are a common method of representing real numbers in computer science. At a high level, they work by having a fixed number of bits to represent the digits of the number, and then another set of bits used to tell us where to put the decimal point.</p>
+<figure>
+    <img src="/media/blog/how-speedrunning-my-own-game-taught-me-a-lesson-about-floats/floating-point.svg"></img>
+    <figcaption>Example Image from Wikipedia</figcaption>
+</figure>
+<p>Having a fixed number of digits means that the further our number gets from zero, the less precision we will have. In the example above with 5 digits, we could represent the number 12.345 with 3 decimal points of precision. However, if we had a number in the 10,000s, such as 12,345, we can't even represent a single decimal place.</p>
+<p>I built The Street King using <a href="https://unity.com/">Unity Engine</a>, which uses 32-bit floats for most of its operations. For the majority of situations, this is plenty enough precision. The outer edges of The Street King's world are still close enough to the origin that there aren't any noticeable effects due to distance. However, one issue which popped up in my speedrun came from measuring time.</p>
+<h3>Time.time in Unity</h3>
+<p>Unity's scripting API allows developers to access a value called <a href="https://docs.unity3d.com/ScriptReference/Time-time.html">Time.time</a>, which is a 32-bit float that starts at 0 and counts up the number of seconds which the game has been running, to decimal precision. Considering that my speedrun went on for 5 hours, Time.time would have reached a value of over 18,000...are you beginning to see the problem?</p>
+<p>After 5 hours of gameplay, Time.time is still accurate to the nearest millisecond, but the sub-millisecond inaccuracy is actually already enough to produce noticeable effects. Don't believe that such a small difference can be visible? Have a look at these two videos:</p>
+<figure class="u-16-9">
+    <iframe src="https://youtube.com/embed/MjFjjAwgBNk?playlist=MjFjjAwgBNk&autoplay=1&mute=1&loop=1"></iframe>
+    <figcaption>How the camera should look.</figcaption>
+</figure>
+<figure class="u-16-9">
+    <iframe src="https://youtube.com/embed/NS4xbwQc634?playlist=NS4xbwQc634&autoplay=1&mute=1&loop=1"></iframe>
+    <figcaption>How the camera actually looks after 5 hours.</figcaption>
+</figure>
+<p>In the second video, there's a noticeable amount of jitter in the camera relative to the car, which is especially noticeable as the car's speed increases. This is visible in the actual livestream too:</p>
+<figure class="u-16-9">
+    <iframe src="https://www.youtube.com/embed/Yt7ga3Awi3Q?clip=UgkxdAyXYGN9bxxy5BqS-iN74p_h-ByeFo-2&amp;clipt=EM-B7wgY5_bvCA&autoplay=1&mute=1&loop=1"></iframe>
+    <figcaption>Jitter is clearly visible in the speedrun</figcaption>
+</figure>
+<p>As I mentioned before, this was the first time I had completed the entire game in one sitting, so it was the longest I'd ever played it continuously. When testing in the past, I'd always closed the game and continued playing again at some later point, which gave Time.time the opportunity to reset to 0 again, hence increasing its accuracy. As a result, this was the first time I'd ever played my own game continuously long enough for this problem to pop up. So, why exactly is this jitter happening, and how did I fix it?</p>
+<h3>Smoothing Out Animations</h3>
+<p>Unity has two major time systems to be aware of: our aforementioned <a href="https://docs.unity3d.com/ScriptReference/Time-time.html">Time.time</a>, which updates every single frame when the game is rerendered, and <a href="https://docs.unity3d.com/ScriptReference/Time-fixedTime.html">Time.fixedTime</a>, which attempts to update at a consistent rate regardless of framerate. Time.time is useful for graphical effects which need to run as fast or slow as the user's current framerate, while Time.fixedTime is important for physics because we don't want higher or lower framerates to affect things like how the car handles in-game.</p>
+<p>A classic example of inadvertantly tying gameplay speed to framerate comes from the classic arcade game <a href="https://en.wikipedia.org/wiki/Space_Invaders">Space Invaders</a>. When the number of enemies on-screen decreases, the framerate increases, causing them to move faster and faster as the player got closer to defeating them all!</p>
+<p>This is a fun quirk in an arcade game, but would be horrible in a racing game. As a result, I handle all physics calculations in The Street King at a fixed rate of 40 Hz regardless of framerate. However, I still want to support arbitrary gameplay framerates, so to smooth out movements, I use <a href="https://en.wikipedia.org/wiki/Interpolation">interpolation</a>.</p>
+<p>Basically, I store the positions of objects on the current and previous physics simulation steps. Then, I compare Time.time to Time.fixedTime to figure out where the current rendering frame lies <i>in between</i> those physics steps, and calculate rendered positions using that. This allows higher framerates like 60 or even 120 fps to look visually smooth even though physics are still constrained to just 40 fps.</p>
+<p>The code to handle this interpolation looks as follows:</p>
+<p><img src="/media/blog/how-speedrunning-my-own-game-taught-me-a-lesson-about-floats/interp-32.png"></img></p>
+<p>We find the difference between the time on the current rendering frame and the time of the last physics update, then divide that by the amount of time between physics updates (which is fixed at 1/40 of a second).</p>
+<p>The problem is, as Time.time and Time.fixedTime grow large, they become less accurate, and eventually, our smooth animations become ugly and jittery.</p>
+<h3>The "Fix"</h3>
+<p>So, how can we resolve this? As shown in the first clip, the car is clearly moving smoothly despite 5 hours having passed already.</p>
+<p>The naive solution is to simply increase the precision of Time.time and Time.fixedTime - and as it turns out, that's probably the ideal one, too. Unity has equivalents of Time.time and Time.fixedTime called <a href="https://docs.unity3d.com/ScriptReference/Time-timeAsDouble.html">Time.timeAsDouble</a> and <a href="https://docs.unity3d.com/ScriptReference/Time-fixedTimeAsDouble.html">Time.fixedTimeAsDouble</a>, respectively. These do basically the same thing as their float counterparts, but use 64-bit double precision floats instead of the normal 32-bit floats. So, our new line of code for smoothing out animations like this:</p> 
+<p><img src="/media/blog/how-speedrunning-my-own-game-taught-me-a-lesson-about-floats/interp-64.png"></img></p>
+<p>But wait, where did these come from if time is usually being tracked as a 32-bit float? And won't we still eventually run into precision problems later with 64-bit floats too?</p>
+<p>Well, to answer the first question, it turns out that Unity internally already tracks time as a double - it's just that if you use Time.time, it converts that value to a float first before giving it to you, losing some precision in the process. The documentation page for Time.timeAsDouble specifically says that you should probably prefer the double variant over the float variant in most situations, yet the float variant makes no such note. It seems most developers, like I was, are completely unaware that Time.timeAsDouble even exists:</p>
+<figure>
+    <img src="/media/blog/how-speedrunning-my-own-game-taught-me-a-lesson-about-floats/timeAsDouble.png"></img>
+    <figcaption>Why is this line so obscure and never mentioned in tutorials?</figcaption>
+</figure>
+<p>As for the second question about this still eventually losing precision at a later point, that's <i>technically</i> true. However, doubling the number of bits in our time tracker doesn't just double the amount of time it takes to run into the same precision issues - instead, we'd expect it to take around <i>2^29, or 536,870,912 times</i>, as long. This is because a double has 29 more bits used for digits than a float, and each bit alone doubles the precision we can achieve. Considering it took the issues around 3 hours to be noticeable with 32-bit precision, we'd need around 1.6 billion hours, or <i>over 180,000 years</i>, of continuous gameplay to reach that same level using 64-bit doubles. Suffice it to say, I don't think we need to worry about precision issues anymore.</p>
+<h3>Conclusion</h3>
+<p>Finding and fixing bugs in games is hard work, especially when some require such specific circumstances to produce that you'd never think of them in the first place. I never imagined that playing my game for a long time continuously would lead to jittery movement, yet here we are.</p>
+<p>My speedrun of the game taught me to never count out any edge cases as potential sources of bugs, and gave me a valuable lesson that floating point values lose precision a lot sooner than you'd expect. With the fix deployed, though, we can go back to enjoying our silky smooth car and camera movement:</p>
+<figure class="u-16-9">
+    <iframe src="https://youtube.com/embed/MjFjjAwgBNk?playlist=MjFjjAwgBNk&autoplay=1&mute=1&loop=1"></iframe>
+    <figcaption>Yay!</figcaption>
+</figure>
+<p>Thanks for reading my post! Watch some highlights/meme edits from the speedrun stream below, or the entire full stream recording:</p>
+<h3>Stream Hightlights and Clips</h3>
+<div class="u-16-9">
+    <iframe src="https://youtube.com/embed/VGSZFgF06lA?playlist=VGSZFgF06lA&autoplay=0&mute=0&loop=1"></iframe>
+</div>
+<h3>Full Livestream</h3>
+<div class="u-16-9">
+    <iframe src="https://youtube.com/embed/Yt7ga3Awi3Q?playlist=Yt7ga3Awi3Q&autoplay=0&mute=0&loop=1"></iframe>
+</div>
