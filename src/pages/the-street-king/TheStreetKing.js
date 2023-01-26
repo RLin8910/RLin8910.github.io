@@ -72,7 +72,7 @@ class TheStreetKing extends Component {
                         <li>Epic drifts, burnouts, and crashes</li>
                         <li>Police helicopters, spike strips, roadblocks, and SWAT trucks</li>
                         <li>Support for Bluetooth controller</li>
-                        <li>41 cars to customize and tune into your dream ride</li>
+                        <li>42 cars to customize and tune into your dream ride</li>
                         <li>Frequent updates with more cars, races, and features!</li>
                     </ul>
                 </div>
@@ -82,7 +82,7 @@ class TheStreetKing extends Component {
                 </div>
                 <div className="secondary-body">
                     <h3>Support</h3>
-                    <h4><a href="/the-street-king/privacy-policy">Privacy Policy</a>   |   <a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/bugs">Bug Reports</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
+                    <h4><a href="/the-street-king/privacy-policy">Privacy Policy</a>   |   <a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/bugs">Bug Reports</a>   |   <a href="/the-street-king/changelogs">Update History</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
                 </div>
             </div>
         );
