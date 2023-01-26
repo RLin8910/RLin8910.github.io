@@ -48,7 +48,7 @@ function App() {
           <Route path = "/the-street-king" element={<TheStreetKing/>}/>
           <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
-          <Route path = "/the-street-king/changelog" element={<TheStreetKingChangelogs/>}/>
+          <Route path = "/the-street-king/changelogs" element={<TheStreetKingChangelogs/>}/>
           <Route path = "/left-turn-legend" element={<LeftTurnLegend/>}/>
           <Route path = "/blog" element={<Blog/>}/>
           {

@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 
-const target = '../the-street-king/changelogs/';
-
 class TheStreetKingChangelogs extends Component {
     constructor(props) {
         super(props);
-        /* eslint import/no-webpack-loader-syntax: off */
-        this.content = require('raw-loader!./changelogs/332.html').default;
     }
 
     componentDidMount() {
         document.title = "Changelogs | The Street King | Raymond Lin";
-    }
+}
 
     render() {
         
@@ -21,10 +17,14 @@ class TheStreetKingChangelogs extends Component {
                 <h2><a href="/the-street-king">The Street King</a></h2>
                 {
                     PAGES.map(page => {
+                        let title = "Update ";
+                        if(page % 10 === 0) title += (page / 100).toFixed(1);
+                        else title += (page / 100).toFixed(2);
+                        const html = require('raw-loader!./changelogs/' + page + '.html').default;
                         return (
                             <div className="secondary-body" key={page}>
-                                <h3>{"Update "+(parseFloat(page.replace('.html','') / 100).toFixed(2))}</h3>
-                                <div dangerouslySetInnerHTML={{__html: this.content}}></div>
+                                <h2>{title}</h2>
+                                <div dangerouslySetInnerHTML={{__html: html}}></div>
                             </div>
                         );
                     })
@@ -35,7 +35,39 @@ class TheStreetKingChangelogs extends Component {
 }
 
 const PAGES = [
-    '332.html'
+    332,
+    331,
+    330,
+    320,
+    310,
+    302,
+    301,
+    300,
+    293,
+    292,
+    291,
+    290,
+    280,
+    271,
+    270,
+    263,
+    262,
+    261,
+    260,
+    250,
+    242,
+    241,
+    240,
+    234,
+    233,
+    232,
+    231,
+    230,
+    221,
+    220,
+    211,
+    210,
+    204,
 ];
 
 export default TheStreetKingChangelogs;
