@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 import TheStreetKing from './pages/the-street-king/TheStreetKing';
 import PrivacyPolicy from './pages/the-street-king/PrivacyPolicy';
 import FeatureRequests from './pages/the-street-king/FeatureRequests';
+import TheStreetKingChangelogs from './pages/the-street-king/TheStreetKingChangelogs';
 // Left Turn Legend
 import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 // Blog
@@ -47,6 +48,7 @@ function App() {
           <Route path = "/the-street-king" element={<TheStreetKing/>}/>
           <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
+          <Route path = "/the-street-king/changelog" element={<TheStreetKingChangelogs/>}/>
           <Route path = "/left-turn-legend" element={<LeftTurnLegend/>}/>
           <Route path = "/blog" element={<Blog/>}/>
           {

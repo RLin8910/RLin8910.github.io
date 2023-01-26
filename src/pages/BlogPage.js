@@ -13,7 +13,6 @@ class BlogPage extends Component {
     }
 
     render() {
-        console.log(this.props.url);
         return (
             <div className="main-body">
                 <h1>{this.props.title}</h1>
