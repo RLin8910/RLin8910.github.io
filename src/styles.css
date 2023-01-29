@@ -282,6 +282,12 @@ figure {
   height: 100%;
 }
 
+.comment-container {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  white-space: pre-wrap;
+}
+
 /* utility */
 /* */
 .u-centered-items{

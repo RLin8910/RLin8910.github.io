@@ -25,10 +25,7 @@ class Blog extends Component {
                                 <h3>
                                     {blog.getDate()}
                                 </h3>
-                                <p>
-                                    <div dangerouslySetInnerHTML={{__html: blog.getPreviewText()+'\r\n\r\n'}} />
-                                    <a href={blog.getPagePath()}>Read More...</a>
-                                </p>
+                                <p dangerouslySetInnerHTML={{__html: blog.getPreviewText()+'\r\n\r\n' + "<a href=" + blog.getPagePath() + ">Read More...</a>"}} />
                             </div>
                         );
                         const image = (
@@ -40,7 +37,7 @@ class Blog extends Component {
                         )
                         const content = i % 2 === 0 ? [image, text] : [text, image];
                         return (
-                            <div className="secondary-body">
+                            <div className="secondary-body" key={i}>
                                 <div className="u-row" key={blog.getPagePath()}>
                                     {content}
                                 </div>

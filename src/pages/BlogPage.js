@@ -23,7 +23,7 @@ class BlogPage extends Component {
                 </div>
                 <div className="secondary-body">
                     <h2>Comments</h2>
-                    <p>
+                    <div classame = "comment-container">
                         <DiscussionEmbed
                             shortname="raymondlin"
                             config={{
@@ -32,7 +32,7 @@ class BlogPage extends Component {
                                 title: this.props.title,
                             }}
                         />
-                    </p>
+                    </div>
                 </div>
                 <div className="secondary-body">
                     <h4><a href="/blog">Back to Blogs</a></h4>
