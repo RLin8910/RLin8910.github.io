@@ -326,8 +326,8 @@ figure {
   margin-bottom: var(--m);
 }
 
-.u-16-9 .secondary-body, .u-16-9 .main-body, .u-16-9 iframe, .u-16-9 img, 
-.u-21-9 .secondary-body, .u-21-9 .main-body, .u-21-9 iframe, .u-21-9 img{
+.u-16-9 .secondary-body, .u-16-9 .main-body, .u-16-9 iframe, .u-16-9 img, .u-16-9 embed,
+.u-21-9 .secondary-body, .u-21-9 .main-body, .u-21-9 iframe, .u-21-9 img, .u-21-9 embed{
   width: 100%;
   margin: 0;
   padding: 0;

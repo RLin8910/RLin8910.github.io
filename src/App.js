@@ -7,6 +7,7 @@ import Footer from './modules/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Changelog from './pages/Changelog';
+import Store from './pages/Store';
 import NotFound from './pages/NotFound';
 // The Street King
 import TheStreetKing from './pages/the-street-king/TheStreetKing';
@@ -45,6 +46,7 @@ function App() {
           <Route path = "/" element={<Home/>}/>
           <Route path = "/about" element = {<About/>}/>
           <Route path = "/changelog" element = {<Changelog/>}/>
+          <Route path = "/store" element = {<Store/>}/>
           <Route path = "/the-street-king" element={<TheStreetKing/>}/>
           <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
