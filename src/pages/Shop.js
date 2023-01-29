@@ -6,15 +6,27 @@ class Shop extends Component {
     }
 
     componentDidMount(){
-        document.title = "Store | Raymond Lin";
+        // override shop attempting to change title
+        const TARGET_TITLE = "Shop | Raymond Lin";
+        document.title = TARGET_TITLE;
+
+        const title = document.getElementsByTagName("title")[0];
+
+        const observer = new MutationObserver(function(mutations) {
+            if(document.title !== TARGET_TITLE) document.title = TARGET_TITLE;
+        });
+
+        const config = { attributes: true, childList: true, characterData: true };
+
+        observer.observe(title, config);
     }
 
     render() {
-        let script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "https://raymond-lin.myspreadshop.com/shopfiles/shopclient/shopclient.nocache.js";
-        document.body.appendChild(script);
-        
+        let shopScript = document.createElement("script");
+        shopScript.type = "text/javascript";
+        shopScript.src = "https://raymond-lin.myspreadshop.com/shopfiles/shopclient/shopclient.nocache.js";
+        document.body.appendChild(shopScript);
+
         return (
             <div>
                 <div id="myShop">
