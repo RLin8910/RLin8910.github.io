@@ -52,7 +52,7 @@ class Minigames extends Component {
                         )
                         const content = i % 2 === 0 ? [image, text] : [text, image];
                         return (
-                            <div className="secondary-body">
+                            <div className="secondary-body" key={i}>
                                 <div className="u-row" key={minigame.getPagePath()}>
                                     {content}
                                 </div>

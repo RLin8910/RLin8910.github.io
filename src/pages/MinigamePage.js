@@ -62,7 +62,7 @@ class MinigamePage extends Component {
                 <div dangerouslySetInnerHTML={{__html: this.content}}></div>
                 <div className="secondary-body">
                     <h2>Comments</h2>
-                    <p>
+                    <div className = "comment-container">
                         <DiscussionEmbed
                             shortname="raymondlin"
                             config={{
@@ -71,7 +71,7 @@ class MinigamePage extends Component {
                                 title: this.props.title,
                             }}
                         />
-                    </p>
+                    </div>
                 </div>
                 <div className="secondary-body">
                     <h4><a href="/minigames">Back to Minigames</a></h4>

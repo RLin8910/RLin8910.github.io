@@ -23,7 +23,7 @@ class BlogPage extends Component {
                 </div>
                 <div className="secondary-body">
                     <h2>Comments</h2>
-                    <div classame = "comment-container">
+                    <div className = "comment-container">
                         <DiscussionEmbed
                             shortname="raymondlin"
                             config={{
