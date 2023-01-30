@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'Grand Opening!',
     'How Speedrunning My Own Game Taught Me a Lesson About Floats',
     'Celebrating 2 Years of Left Turn Legend!',
     'Creating OVER 300 Concepts for Dodge\'s Return to NASCAR',
