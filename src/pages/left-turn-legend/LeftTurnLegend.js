@@ -15,7 +15,7 @@ class LeftTurnLegend extends Component {
                 <h1>Left Turn Legend</h1>
                 <h2>Oval Circuit Racing, With a Twist!</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/cVkCJxEQ92c?playlist=cVkCJxEQ92c&autoplay=1&mute=1&loop=1"></iframe>
+                    <iframe src="https://youtube.com/embed/MTyzg3hjmrU?playlist=MTyzg3hjmrU&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
@@ -25,7 +25,8 @@ class LeftTurnLegend extends Component {
                         {' to '}see how the game grows and changes over time.{'\r\n\r\n'}
                         The game focuses on intense short-track races with lots of crazy crashes while 
                         satirizing American capitalism and consumer culture. The large array of sponsors 
-                        each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.</p>
+                        each reflect upon a real-life industry or company in a light-hearted yet meaningful manner.
+                        {'\r\n\r\n'}Left Turn Legend will be releasing very soon! Stay tuned...</p>
                 </div>
                 <div className="secondary-body">
                     <h3>Devlog Series</h3>
