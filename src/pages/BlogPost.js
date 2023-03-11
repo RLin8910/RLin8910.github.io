@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'Left Turn Legend is Here!',
     'Grand Opening!',
     'How Speedrunning My Own Game Taught Me a Lesson About Floats',
     'Celebrating 2 Years of Left Turn Legend!',
