@@ -10,7 +10,7 @@ class PrivacyPolicy extends Component {
         return (
             <div className="main-body">
                 <h1>Privacy Policy</h1>
-                <h2><a href={this.props.link}>{this.props.game}</a></h2>
+                <h2><a href={PATH[this.props.game]}>{this.props.game}</a></h2>
                 <div className="secondary-body">
                     <p>Raymond Lin built the {this.props.game} app as an Ad Supported app. 
                         This SERVICE is provided by Raymond Lin at no cost and is intended for use as is.{'\r\n\r\n'}
@@ -125,6 +125,11 @@ class PrivacyPolicy extends Component {
             </div>
         );
     }
+}
+
+const PATH = {
+    "Left Turn Legend" : '/left-turn-legend',
+    "The Street King" : '/the-street-king'
 }
 
 export default PrivacyPolicy;

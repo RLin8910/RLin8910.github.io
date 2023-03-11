@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound';
 import TheStreetKing from './pages/the-street-king/TheStreetKing';
 import PrivacyPolicy from './pages/the-street-king/PrivacyPolicy';
 import FeatureRequests from './pages/the-street-king/FeatureRequests';
-import TheStreetKingChangelogs from './pages/the-street-king/TheStreetKingChangelogs';
+import GameChangelogs from './pages/GameChangelogs';
 // Left Turn Legend
 import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
 // Blog
@@ -48,11 +48,12 @@ function App() {
           <Route path = "/changelog" element = {<Changelog/>}/>
           <Route path = "/shop" element = {<Shop/>}/>
           <Route path = "/the-street-king" element={<TheStreetKing/>}/>
-          <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy game="The Street King" link="/the-street-king"/>}/>
+          <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy game="The Street King"/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
-          <Route path = "/the-street-king/changelogs" element={<TheStreetKingChangelogs/>}/>
+          <Route path = "/the-street-king/changelogs" element={<GameChangelogs game="The Street King"/>}/>
           <Route path = "/left-turn-legend" element={<LeftTurnLegend/>}/>
-          <Route path = "/left-turn-legend/privacy-policy" element={<PrivacyPolicy game="Left Turn Legend" link="/left-turn-legend"/>}/>
+          <Route path = "/left-turn-legend/privacy-policy" element={<PrivacyPolicy game="Left Turn Legend"/>}/>
+          <Route path = "/left-turn-legend/changelogs" element={<GameChangelogs game="Left Turn Legend"/>}/>
           <Route path = "/blog" element={<Blog/>}/>
           {
             blogs.map((blog) =>{
