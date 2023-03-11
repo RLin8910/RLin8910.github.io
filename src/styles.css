@@ -324,6 +324,11 @@ figure {
   align-items: center;
 }
 
+.u-eighth-column{
+  width: calc(12.5% - var(--margin)/4);
+  align-items: center;
+}
+
 /* aspect utility */
 .u-16-9, .u-21-9 {
   margin-left: var(--margin);

@@ -17,28 +17,28 @@ class About extends Component {
                     <p>
                         <div className="u-row">
                             <div className="u-half-column">
-                                <img src="/media/tsk/tsk.png"></img>
+                                <a href="/the-street-king"><img src="/media/tsk/tsk.png"></img></a>
                             </div>
                             <div className="u-half-column">
-                                <img src="/media/ltl/ltl.png"></img>
+                                <a href="/left-turn-legend"><img src="/media/ltl/ltl.png"></img></a>
                             </div>
                         </div>
                         My name is Raymond, and I'm a solo game developer. I've been super interested in games and
                         computers from a young age, so picking up game dev was a natural next step!
                         {'\r\n\r\n'}
                         I've now been making games for almost 10 years. Although many of my first projects were
-                        never published and have now been lost to time, I do have one major published game,{' '}
-                        <a href="/the-street-king">The Street King</a>, as well as another project in
-                        development called <a href="/left-turn-legend">Left Turn Legend</a>. I also created several{' '}
-                        <a href="/minigames">smaller games</a> which can be found right here on this site. As you can probably
-                        tell from these games, I love cars and racing, so they have been the primary focus of my
-                        projects.
+                        never published and have now been lost to time, I have two major published games:{' '}
+                        <a href="/the-street-king">The Street King</a> and <a href="/left-turn-legend">Left Turn Legend</a>. 
+                        Both of these games are expressions of my passion for cars as they explore the worlds of illegal street
+                        racing and sanctioned oval circuit racing in the USA, respectively.
+                        {'\r\n\r\n'}I also created several{' '}
+                        <a href="/minigames">smaller games</a> which can be found and played in-browser right here on this site.
                         {'\r\n\r\n'}
                         Besides games and cars, I also enjoy both listening to music and performing it as a violinist.
                         I am currently in college studying computer science with the hopes of one day starting my own
                         games studio.
                         {'\r\n\r\n'}
-                        For more of my thoughts on my projects, check out the <a href="/blog">blog</a>, and be sure to 
+                        For more of my thoughts and miscellaneous projects, check out the <a href="/blog">blog</a>, and be sure to 
                         look at the "Social" menu in the top bar for more links!
                     </p>
                 </div>

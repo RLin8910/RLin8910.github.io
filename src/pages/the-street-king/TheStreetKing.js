@@ -13,7 +13,8 @@ class TheStreetKing extends Component {
         return (
             <div className="main-body">
                 <h1>The Street King</h1>
-                <h2>Open World Street Racing</h2>
+                <h3>Open World Street Racing In the Palm of Your Hand!</h3>
+                <h2><a href="https://play.google.com/store/apps/details?id=com.RaymondLin.TheStreetKing">Android Download</a>   |   <a href="https://apps.apple.com/us/app/the-street-king/id1615309661">iOS Download</a></h2>
                 <div className="u-21-9">
                     <iframe src="https://youtube.com/embed/ZJ0tSErO04Y?playlist=ZJ0tSErO04Y&autoplay=1&mute=1&loop=1"></iframe>
                 </div>

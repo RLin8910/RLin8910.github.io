@@ -16,8 +16,8 @@ class Home extends Component {
             <div className="main-body">
                 <h1>Game Developer,  Programmer,  Artist</h1>
                 <h2><a href="https://play.google.com/store/apps/developer?id=RLin">Google Play Store</a>   |   <a href="https://apps.apple.com/us/developer/raymond-lin/id1615309663">iOS App Store</a></h2>
-                <div className="u-21-9">
-                    <iframe src="https://youtube.com/embed/ZJ0tSErO04Y?playlist=ZJ0tSErO04Y&autoplay=1&mute=1&loop=1"></iframe>
+                <div className="u-16-9">
+                    <iframe src="https://youtube.com/embed/qg18MEdOp5U?playlist=qg18MEdOp5U&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
                 <h1>Games</h1>
 
@@ -54,8 +54,10 @@ class Home extends Component {
                                 stock cars from the past or race around in marvelous modern machines.
                                 Customize your cars, collect capitalist sponsors, and become a Left Turn Legend.
                                 {'\r\n\r\n'}
-                                {'Left Turn Legend is currently still in development, so check out the ongoing '}
-                                <a href="https://youtube.com/playlist?list=PLvWoPUN7LnBqf0tG76klh_5G9xOvinwsS">devlog series!</a>
+                                Download it on <a href="https://play.google.com/store/apps/details?id=com.RaymondLin.LeftTurnLegend">Android</a>
+                                {' or '}<a href="https://apps.apple.com/us/app/left-turn-legend/id6444576371">iOS</a>
+                                {', and check out the '}<a href="https://youtube.com/playlist?list=PLvWoPUN7LnBrejppLeI3qUk6RB-Wc5kHn">devlog series</a>
+                                {' for behind-the-scenes content explaining how I made the game!'}
                                 {'\r\n\r\n'}
                                 <a href="/left-turn-legend">Read More...</a>
                             </p>
