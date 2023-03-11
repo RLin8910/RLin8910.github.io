@@ -16,8 +16,8 @@ class Home extends Component {
             <div className="main-body">
                 <h1>Game Developer,  Programmer,  Artist</h1>
                 <h2><a href="https://play.google.com/store/apps/developer?id=RLin">Google Play Store</a>   |   <a href="https://apps.apple.com/us/developer/raymond-lin/id1615309663">iOS App Store</a></h2>
-                <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/qg18MEdOp5U?playlist=qg18MEdOp5U&autoplay=1&mute=1&loop=1"></iframe>
+                <div className="u-21-9">
+                    <iframe src="https://youtube.com/embed/ZJ0tSErO04Y?playlist=ZJ0tSErO04Y&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
                 <h1>Games</h1>
 
