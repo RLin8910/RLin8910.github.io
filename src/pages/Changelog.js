@@ -14,6 +14,12 @@ class Changelog extends Component {
             <div className="main-body">
                 <h1>Site Changelog</h1>
                 <div className="secondary-body">
+                    <h2>March 12, 2023</h2>
+                    <ul>
+                        <li><a href="/left-turn-legend">Left Turn Legend</a> has been released! Pages have been updated accordingly.</li>
+                    </ul>
+                </div>
+                <div className="secondary-body">
                     <h2>January 30, 2023</h2>
                     <ul>
                         <li>The <a href="/shop">Shop</a> is here! Get all-new merch for <a href="/the-street-king">The Street King</a> and <a href="left-turn-legend">Left Turn Legend</a>.</li>
