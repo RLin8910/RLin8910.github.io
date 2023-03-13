@@ -17,9 +17,7 @@ class GameChangelogs extends Component {
                 <h2><a href={"/"+PATH[this.props.game]}>{this.props.game}</a></h2>
                 {
                     PAGES[this.props.game].map(page => {
-                        let title = "Update ";
-                        if(page % 10 === 0) title += (page / 100).toFixed(1);
-                        else title += (page / 100).toFixed(2);
+                        let title = TITLE[this.props.game](page);
                         const html = require('raw-loader!./'+PATH[this.props.game]+'/changelogs/' + page + '.html').default;
                         return (
                             <div className="secondary-body" key={page}>
@@ -34,6 +32,20 @@ class GameChangelogs extends Component {
     }
 }
 
+const TITLE = {
+    "Left Turn Legend": page => {
+        let pageString = page.toString();
+        let title = "Update " + pageString[0] + '.' + pageString[1] + '.' + pageString[2];
+        return title;
+    },
+    "The Street King": page => {
+        let title = "Update ";
+        if(page % 10 === 0) title += (page / 100).toFixed(1);
+        else title += (page / 100).toFixed(2);
+        return title;
+    },
+}
+
 const PATH = {
     "Left Turn Legend" : 'left-turn-legend',
     "The Street King" : 'the-street-king'
@@ -41,7 +53,8 @@ const PATH = {
 
 const PAGES = {
     "Left Turn Legend": [
-        100
+        101,
+        100,
     ],
     "The Street King": [
         332,
