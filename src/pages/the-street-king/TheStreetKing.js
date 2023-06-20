@@ -18,6 +18,10 @@ class TheStreetKing extends Component {
                 <div className="u-21-9">
                     <iframe src="https://youtube.com/embed/ZJ0tSErO04Y?playlist=ZJ0tSErO04Y&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
+                <h2>Latest Update</h2>
+                <div className="u-16-9">
+                    <iframe src="https://youtube.com/embed/zBt5DyngF3s?playlist=zBt5DyngF3s&autoplay=0&mute=0&loop=0"></iframe>
+                </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
                     <p>Race in the biggest open world racing game for mobile, with over 50 miles of road! 

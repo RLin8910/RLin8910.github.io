@@ -18,6 +18,10 @@ class LeftTurnLegend extends Component {
                 <div className="u-16-9">
                     <iframe src="https://youtube.com/embed/MTyzg3hjmrU?playlist=MTyzg3hjmrU&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
+                <h2>Latest Update</h2>
+                <div className="u-16-9">
+                    <iframe src="https://youtube.com/embed/jvCREXYP7e0?playlist=jvCREXYP7e0&autoplay=0&mute=0&loop=0"></iframe>
+                </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
                     <p>Left Turn Legend is an endless 
