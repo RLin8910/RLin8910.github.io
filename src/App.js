@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 import TheStreetKing from './pages/the-street-king/TheStreetKing';
 import PrivacyPolicy from './pages/the-street-king/PrivacyPolicy';
 import FeatureRequests from './pages/the-street-king/FeatureRequests';
+import CarVote from './pages/the-street-king/CarVote';
 import GameChangelogs from './pages/GameChangelogs';
 // Left Turn Legend
 import LeftTurnLegend from './pages/left-turn-legend/LeftTurnLegend';
@@ -51,6 +52,7 @@ function App() {
           <Route path = "/the-street-king/privacy-policy" element={<PrivacyPolicy game="The Street King"/>}/>
           <Route path = "/the-street-king/feature-requests" element={<FeatureRequests/>}/>
           <Route path = "/the-street-king/changelogs" element={<GameChangelogs game="The Street King"/>}/>
+          <Route path = "/the-street-king/car-vote" element = {<CarVote/>}/>
           <Route path = "/left-turn-legend" element={<LeftTurnLegend/>}/>
           <Route path = "/left-turn-legend/privacy-policy" element={<PrivacyPolicy game="Left Turn Legend"/>}/>
           <Route path = "/left-turn-legend/changelogs" element={<GameChangelogs game="Left Turn Legend"/>}/>

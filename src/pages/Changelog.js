@@ -14,6 +14,12 @@ class Changelog extends Component {
             <div className="main-body">
                 <h1>Site Changelog</h1>
                 <div className="secondary-body">
+                    <h2>June ??, 2023</h2>
+                    <ul>
+                        <li>Add page for the <a href="/the-street-king/car-vote">Final Car Vote</a> for <a href="/the-street-king">The Street King</a></li>
+                    </ul>
+                </div>
+                <div className="secondary-body">
                     <h2>March 12, 2023</h2>
                     <ul>
                         <li><a href="/left-turn-legend">Left Turn Legend</a> has been released! Pages have been updated accordingly.</li>
@@ -77,7 +83,7 @@ class Changelog extends Component {
                 <div className="secondary-body">
                     <h2>May 22, 2022</h2>
                     <ul>
-                        <li>Site published! Woo-hoo!</li>
+                        <li><a href="/blog/welcome-to-my-new-website">Site published! Woo-hoo!</a></li>
                     </ul>
                 </div>
             </div>
