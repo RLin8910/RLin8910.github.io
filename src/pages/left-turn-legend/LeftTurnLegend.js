@@ -20,7 +20,7 @@ class LeftTurnLegend extends Component {
                 </div>
                 <h2>Latest Update</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/jvCREXYP7e0?playlist=jvCREXYP7e0&autoplay=0&mute=0&loop=0"></iframe>
+                    <iframe src="https://youtube.com/embed/WelM2qEdEQU?playlist=WelM2qEdEQU&autoplay=0&mute=0&loop=0"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
@@ -70,7 +70,7 @@ class LeftTurnLegend extends Component {
                     <h3>Features</h3>
                     <ul>
                         <li>Low-poly, fast-paced oval circuit racing</li>
-                        <li>60+ legendary stock cars from over 80 years of history</li>
+                        <li>75 legendary stock cars from over 80 years of history</li>
                         <li>Crazy sponsors with even crazier goals to complete</li>
                         <li>Dirt and asphalt racing</li>
                         <li>Wrong way racing - go backwards around the track!</li>
