@@ -20,7 +20,7 @@ class TheStreetKing extends Component {
                 </div>
                 <h2>Latest Update</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/zBt5DyngF3s?playlist=zBt5DyngF3s&autoplay=0&mute=0&loop=0"></iframe>
+                    <iframe src="https://youtube.com/embed/U9_57Xyqx6M?playlist=U9_57Xyqx6M&autoplay=0&mute=0&loop=0"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
@@ -80,6 +80,17 @@ class TheStreetKing extends Component {
                         <li>42 cars to customize and tune into your dream ride</li>
                         <li>Frequent updates with more cars, races, and features!</li>
                     </ul>
+                </div>
+                <div className="secondary-body">
+                    <h3>The Story of The Street King</h3>
+                    <p>The Street King was my first major game, and development has now spanned over <b>8 years</b>. It's what got me interested in programming 
+                    and gamedev in the first place, so it'll always have a special place in my heart. 
+                    Check out my <a href="/blog/i-spent-8-years-building-my-dream-game">blog post</a> where I reflect on the story from the mindset of a gamedev.
+                    
+                    {'\r\n\r\n'}Alternatively, for a more casual audience, watch my video where I explain how The Street King came to be:</p>
+                    <div className="u-16-9">
+                        <iframe src="https://youtube.com/embed/3-dyYF10Hqg?playlist=3-dyYF10Hqg&autoplay=0&mute=0&loop=0"></iframe>
+                    </div>
                 </div>
                 <div className="secondary-body">
                     <h3>Community</h3>

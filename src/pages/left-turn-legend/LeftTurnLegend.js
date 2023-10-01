@@ -86,7 +86,7 @@ class LeftTurnLegend extends Component {
                 </div>
                 <div className="secondary-body">
                     <h3>Devlog Series</h3>
-                    <p>As part of Left Turn Legend's development, I've been cataloguing entire process. My devlog series
+                    <p>As part of Left Turn Legend's development, I've been cataloguing the entire process. My devlog series
                        explains my problem solving process and how I approach the challenges involved in creating the game.
                        It has also been a great point of growth for me - I've gotten a lot better at content creation and
                        narration.
