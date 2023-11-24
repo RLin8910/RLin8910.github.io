@@ -20,7 +20,7 @@ class LeftTurnLegend extends Component {
                 </div>
                 <h2>Latest Update</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/WelM2qEdEQU?playlist=WelM2qEdEQU&autoplay=0&mute=0&loop=0"></iframe>
+                    <iframe src="https://youtube.com/embed/iqGrXX8fyJs?playlist=iqGrXX8fyJs&autoplay=0&mute=0&loop=0"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
