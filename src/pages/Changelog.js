@@ -14,6 +14,13 @@ class Changelog extends Component {
             <div className="main-body">
                 <h1>Site Changelog</h1>
                 <div className="secondary-body">
+                    <h2>January 22, 2024</h2>
+                    <ul>
+                        <li>Added images to the gallery on <a href="/the-street-king">The Street King's page</a>.</li>
+                        <li>Switched around the locations of some navbar elements</li>
+                    </ul>
+                </div>
+                <div className="secondary-body">
                     <h2>October 1, 2023</h2>
                     <ul>
                         <li>Added section on <a href="/blog/i-spent-8-years-building-my-dream-game">The Story of The Street King</a> to <a href="/the-street-king">The Street King's page</a>.</li>

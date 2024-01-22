@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 class GameChangelogs extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
         document.title = "Changelogs | "+this.props.game + " | Raymond Lin";
@@ -64,6 +61,7 @@ const PAGES = {
         100,
     ],
     "The Street King": [
+        370,
         361,
         360,
         351,

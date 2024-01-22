@@ -15,8 +15,8 @@ import React, { Component } from "react";
             <div className="navbar-fake"/>
             <div className="navbar">
                 <a href="/">Home</a>
-                <a href="/blog">Blog</a>
                 <a href="/shop">Shop</a>
+                <a href="/blog">Blog</a>
                 <div className="dropdown">
                     <button className="dropdown-button">
                         <a href={void(0)} onClick={this.onClick}>Games</a>

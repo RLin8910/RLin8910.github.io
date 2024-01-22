@@ -20,7 +20,7 @@ class TheStreetKing extends Component {
                 </div>
                 <h2>Latest Update</h2>
                 <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/U9_57Xyqx6M?playlist=U9_57Xyqx6M&autoplay=0&mute=0&loop=0"></iframe>
+                    <iframe src="https://youtube.com/embed/7sn5uEy3q5A?playlist=7sn5uEy3q5A&autoplay=0&mute=0&loop=0"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
@@ -46,7 +46,7 @@ class TheStreetKing extends Component {
                             <a href="/media/tsk/gallery/crews.png"><img src="/media/tsk/gallery/crews-low.png"/></a>
                         </div>
                         <div className="u-fourth-column">
-                            <a href="/media/tsk/gallery/devilish-deeds.png"><img src="/media/tsk/gallery/devilish-deeds-low.png"/></a>
+                            <a href="/media/tsk/gallery/stock-cars.png"><img src="/media/tsk/gallery/stock-cars-low.png"/></a>
                         </div>
                     </div>
                     <div className="u-row">
@@ -63,6 +63,20 @@ class TheStreetKing extends Component {
                             <a href="/media/tsk/gallery/weather.png"><img src="/media/tsk/gallery/weather-low.png"/></a>
                         </div>
                     </div>
+                    <div className="u-row">
+                        <div className="u-fourth-column">
+                            <a href="/media/tsk/gallery/eighties-update.png"><img src="/media/tsk/gallery/eighties-update-low.png"/></a>
+                        </div>
+                        <div className="u-fourth-column">
+                            <a href="/media/tsk/gallery/devilish-deeds.png"><img src="/media/tsk/gallery/devilish-deeds-low.png"/></a>
+                        </div>
+                        <div className="u-fourth-column">
+                            <a href="/media/tsk/gallery/nitro-nights.png"><img src="/media/tsk/gallery/nitro-nights-low.png"/></a>
+                        </div>
+                        <div className="u-fourth-column">
+                            <a href="/media/tsk/gallery/wire-car.png"><img src="/media/tsk/gallery/wire-car-low.png"/></a>
+                        </div>
+                    </div>
                 </div>
                 <div className="secondary-body">
                     <h3>Features</h3>
@@ -77,7 +91,7 @@ class TheStreetKing extends Component {
                         <li>Epic drifts, burnouts, and crashes</li>
                         <li>Police helicopters, spike strips, roadblocks, and SWAT trucks</li>
                         <li>Support for Bluetooth controller</li>
-                        <li>42 cars to customize and tune into your dream ride</li>
+                        <li>45+ cars to customize and tune into your dream ride</li>
                         <li>Frequent updates with more cars, races, and features!</li>
                     </ul>
                 </div>
