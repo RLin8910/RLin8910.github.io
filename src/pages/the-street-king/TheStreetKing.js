@@ -19,8 +19,8 @@ class TheStreetKing extends Component {
                     <iframe src="https://youtube.com/embed/ZJ0tSErO04Y?playlist=ZJ0tSErO04Y&autoplay=1&mute=1&loop=1"></iframe>
                 </div>
                 <h2>Latest Update</h2>
-                <div className="u-16-9">
-                    <iframe src="https://youtube.com/embed/7sn5uEy3q5A?playlist=7sn5uEy3q5A&autoplay=0&mute=0&loop=0"></iframe>
+                <div className="u-21-9">
+                    <iframe src="https://youtube.com/embed/9L6V8wmInr4?playlist=9L6V8wmInr4&autoplay=0&mute=0&loop=0"></iframe>
                 </div>
                 <div className="secondary-body">
                     <h3>Overview</h3>
