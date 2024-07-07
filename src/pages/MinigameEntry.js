@@ -1,4 +1,6 @@
 const regex = /[^a-zA-Z0-9-]/ig;
+const PATH_PREFIX = "https://html.itch.zone/html/";
+const PATH_SUFFIX = "/index.html";
 
 class MinigamePage{
     constructor(name, pagePath, contentPath, gamePath, previewText, previewImage){
@@ -11,18 +13,19 @@ class MinigamePage{
     }
 }
 
-// dictionary of names of games to directories
+// dictionary of names of games to ids
 const MINIGAMES = {
-    'The Boomer': "https://v6p9d9t4.ssl.hwcdn.net/html/6877400/index.html",
-    'Neom': "https://v6p9d9t4.ssl.hwcdn.net/html/6693689/index.html",
-    'No Beaches': "https://v6p9d9t4.ssl.hwcdn.net/html/5842170/index.html",
-    'Bonk': "https://v6p9d9t4.ssl.hwcdn.net/html/5842211/index.html",
-    'Stupi Square and Sussy Circle': "https://v6p9d9t4.ssl.hwcdn.net/html/5842256/index.html",
-    'Fish and Crips': "https://v6p9d9t4.ssl.hwcdn.net/html/5842339/index.html",
-    'Click': "https://v6p9d9t4.ssl.hwcdn.net/html/5842361/index.html",
+    'The Boomer': "6877400",
+    'Neom': "6693689",
+    'No Beaches': "5842170",
+    'Bonk': "5842211",
+    'Stupi Square and Sussy Circle': "5842256",
+    'Fish and Crips': "5842339",
+    'Click': "5842361",
 }
-const MINIGAME_PREVIEWS = Object.entries(MINIGAMES).map(([name, gamePath]) => 
+const MINIGAME_PREVIEWS = Object.entries(MINIGAMES).map(([name, gameId]) => 
     {
+        const gamePath = PATH_PREFIX + gameId + PATH_SUFFIX;
         const strippedName = name.toLowerCase().replaceAll(" ","-").replaceAll(regex,"");
         return new MinigamePage(
             name, 
