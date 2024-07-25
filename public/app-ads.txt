@@ -1,5 +1,60 @@
-## AdsTxtSite app-ads.txt - Updated at: 2024-05-20
+## AdsTxtSite app-ads.txt - Updated at: 2024-07-22
 
+facebook.com, 952344128249254, DIRECT, c3e20eee3f780d68
+smaato.com, 1100056110, RESELLER, 07bcf65f187117b4
+smartadserver.com, 4728, RESELLER, 060d053dcf45cbf3
+contextweb.com, 563285, RESELLER, 89ff185a4c4e857c
+sharethrough.com, LC86m64o, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, r9B1MG7E, RESELLER, d53b998a7bd4ecd2
+castify.ai, 1287331, RESELLER
+bidease.com, bidease_seller_28, RESELLER
+axonix.com, 59163, RESELLER, bc385f2b4a87b721
+axonix.com, 59133, RESELLER, bc385f2b4a87b721
+thunder-monetize.com, 4977054380, RESELLER
+yieldlab.net, 15465081, RESELLER
+video.unrulymedia.com, 322585001, RESELLER
+video.unrulymedia.com, 809865099, RESELLER
+app-stock.com, 91654, RESELLER
+inmobi.com, 95ef2003a2c742db81a45303d6e4cf8b, RESELLER, 83e75a7ae333ca9d
+rhebus.works, 1976779507, RESELLER
+webeyemob.com, 80010, RESELLER
+lijit.com, 512908, RESELLER, fafdf38b16bf6b2b
+lijit.com, 500520, RESELLER, fafdf38b16bf6b2b
+lijit.com, 481366, RESELLER, fafdf38b16bf6b2b
+lijit.com, 483304, RESELLER, fafdf38b16bf6b2b
+zmaticoo.com, 5135655, RESELLER
+pubnative.net, 1009046, RESELLER, d641df8625486a7b
+krushmedia.com, AJxF6R585a9M6CaTvK, RESELLER
+toponad.com, 1658d4a00557ce, RESELLER, 1d49fe424a1a456d
+yeahmobi.com, 111110, RESELLER
+adform.com, 2967, RESELLER, 9f5210a2f0999e32
+adform.com, 2688, RESELLER, 9f5210a2f0999e32
+freewheel.tv, 1603124, RESELLER
+pubmatic.com, 164452, RESELLER, 5d62403b186f2ace
+pubmatic.com, 164562, RESELLER, 5d62403b186f2ace
+e-planning.net, 75f09c55845dd6e3, RESELLER, c1ba615865ed87b2
+rubiconproject.com, 26324, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25966, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25748, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 25978, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 26310, RESELLER, 0bfd66d529a55807
+playwire.com, 1025119, RESELLER
+olaex.biz, 100008, RESELLER
+advangelists.com, ebf01981b565aa5f03299b38bd50650c, RESELLER, 60d26397ec060f98
+improvedigital.com, 2297, RESELLER
+appnexus.com, 15980, RESELLER, f5ab79cb980f11d1
+appnexus.com, 15670, RESELLER, f5ab79cb980f11d1
+start.io, 115550145, DIRECT
+themediagrid.com, 6XGFYQ, DIRECT, 35d5010d7789b49d
+betweendigital.com, 43860, RESELLER
+betweendigital.com, 45270, RESELLER
+caerulus.io, 3320-72775, RESELLER
+lijit.com, 488437, RESELLER, fafdf38b16bf6b2b
+pubmatic.com, 163476, RESELLER, 5d62403b186f2ace
+rhebus.works, 9176497567, RESELLER
+risecodes.com, 662a26f1f3d42a00015ffbad, RESELLER
+start.io, 162328800, RESELLER
+taurusx.com, 70090, RESELLER
 blueseasx.com, 203596, RESELLER, 7998eac5087f6110
 yandex.com, 98384845, RESELLER
 openx.com, 537045659, RESELLER, 6a698e2ec38604c6
