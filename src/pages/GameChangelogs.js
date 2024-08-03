@@ -63,6 +63,7 @@ const PAGES = {
         100,
     ],
     "The Street King": [
+        382,
         381,
         380,
         370,
