@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'Shots from Monterey Car Week',
     'I Spent 8 Years Building My Dream Game',
     'Left Turn Legend is Here!',
     'Grand Opening!',
