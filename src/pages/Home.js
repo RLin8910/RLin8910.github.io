@@ -104,7 +104,7 @@ class Home extends Component {
                 </div>
                  <h1>Other</h1>
                 <div className="secondary-body">
-                    <h4><a href="/shop">Shop</a>   |   <a href="/about">About Me</a>   |   <a href="/changelog">Site Changelog</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
+                    <h4><a href="/shop">Shop</a>   |   <a href="/about">About</a>   |   <a href="/changelog">Site Changelog</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
                 </div>
             </div>
         );
