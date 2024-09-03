@@ -71,7 +71,7 @@ class About extends Component {
                     <h4>Peripherals</h4>
                     <p>
                         <ul>
-                            <li>Monoprice Dark Matter 49 in. Curved Monitor - 32:9, 1800R, 4120x1440 120 Hz</li>
+                            <li>Monoprice Dark Matter 49 in. Curved Monitor - 32:9, 1800R, 5120x1440 120 Hz</li>
                             <li>Razer Black Widow Green Switch Keyboard</li>
                             <li>Logitech G602 Gaming Mouse</li>
                         </ul>
