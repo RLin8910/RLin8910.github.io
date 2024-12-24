@@ -43,7 +43,7 @@ import React, { Component } from "react";
                         <a href="https://youtube.com/c/RaymondLin2">Secondary Channel</a>
                         <a href="https://discord.gg/RqXbKwk">Discord Server</a>
                         <a href="https://www.patreon.com/TheStreetKing">Patreon Page</a>
-                        <a href="mailto:feedback.thestreetking@gmail.com">Email</a>
+                        <a href="mailto:feedback.thestreetking@gmail.com">Contact Email</a>
                     </div>
                 </div>
             </div>

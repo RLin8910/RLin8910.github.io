@@ -15,17 +15,12 @@ class FeatureRequests extends Component {
                 <h1>The Street King</h1>
                 <h2>Feature Requests</h2>
                 <div className="secondary-body">
-                    <h3>Would you like to request something that is...</h3>
-                    <div className="u-row">
-                        <div className="u-half-column">
-                            <h4><a href="https://docs.google.com/forms/d/e/1FAIpQLSfoY-6H5gR1FPhAvmFZ3m32Rvc3cGgpaoT_lbvYphWRyGpEkQ/viewform?usp=sf_link">...a car?</a></h4>
-                            <img src="/media/tsk/cars.png"/>
-                        </div>
-                        <div className="u-half-column">
-                            <h4><a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/suggestions">...not a car?</a></h4>
-                            <img src="/media/tsk/notcar.png"/>
-                        </div>
-                    </div>
+                    <h3>Feature Requests are Closed</h3>
+                    <p>Feature requests for <a href="/the-street-king">The Street King</a> are now closed. 
+                    Thank you for being a dedicated player!
+                    {'\r\n\r\n'}
+                    If you have additional concerns requiring support, 
+                    please use the <a href="mailto:feedback.thestreetking@gmail.com">contact email.</a></p>
                 </div>
             </div>
         );

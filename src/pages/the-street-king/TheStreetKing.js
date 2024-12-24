@@ -108,11 +108,11 @@ class TheStreetKing extends Component {
                 </div>
                 <div className="secondary-body">
                     <h3>Community</h3>
-                    <h4><a href="/the-street-king/feature-requests">Feature Requests</a>   |   <a href="https://youtube.com/c/RaymondLin">Youtube Channel</a>   |   <a href="https://discord.gg/RqXbKwk">Discord Server</a></h4>
+                    <h4><a href="https://youtube.com/c/RaymondLin">Youtube Channel</a>   |   <a href="https://discord.gg/RqXbKwk">Discord Server</a></h4>
                 </div>
                 <div className="secondary-body">
                     <h3>Support</h3>
-                    <h4><a href="/the-street-king/privacy-policy">Privacy Policy</a>   |   <a href="https://communiroo.com/Raymond-Lin/the-street-king-feature-requests/bugs">Bug Reports</a>   |   <a href="/the-street-king/changelogs">Update History</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
+                    <h4><a href="/the-street-king/privacy-policy">Privacy Policy</a>   |   <a href="/the-street-king/changelogs">Update History</a>   |   <a href="mailto:feedback.thestreetking@gmail.com">Contact</a></h4>
                 </div>
             </div>
         );
