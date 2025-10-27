@@ -50,6 +50,7 @@ const PATH = {
 
 const PAGES = {
     "Left Turn Legend": [
+        143,
         142,
         141,
         140,
@@ -64,6 +65,7 @@ const PAGES = {
         100,
     ],
     "The Street King": [
+        392,
         391,
         390,
         382,
