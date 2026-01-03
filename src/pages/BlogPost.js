@@ -13,6 +13,7 @@ class BlogPost{
 
 const BLOG_DIR = '/blog-posts/';
 const BLOG_NAMES = [
+    'C7 Corvette - 1 Year Review - Track and Daily Duty!',
     'Shots from Monterey Car Week',
     'I Spent 8 Years Building My Dream Game',
     'Left Turn Legend is Here!',
